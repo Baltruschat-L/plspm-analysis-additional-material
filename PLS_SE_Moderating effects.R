@@ -34,8 +34,6 @@ plsmodel = rbind(Experience, Voluntariness, Performance_Expectancy, Social_Influ
 
 colnames(plsmodel) = rownames(plsmodel)
 
-plsmodel
-
 innerplot(plsmodel)
 
 #BuildingOutermodel
@@ -56,20 +54,7 @@ pls_modes=rep("A",12)
 
 pls_results=plspm(data, plsmodel,plsmodel_blocks,pls_modes)
 
-pls_results
-
-pls_results$outer_model
-
-pls_results$unidim
-
-pls_results$crossloadings
-
-pls_results$inner_model
-
-pls_results$path_coefs
-
-pls_results$inner_summary
-
+--------------------------------------------------
 # Experience and Voluntariness moderating effect
 # get the latent variable scores in data frame format
 Scores = as.data.frame(pls_results$scores)
@@ -93,6 +78,8 @@ reg = lm(Behaviour_Intention ~ Experience + Voluntariness + Performance_Expectan
 
 reg$coefficients
 summary(reg)
+
+-----------------------------------------
 # moderating effect of Gender
 dataFM<-data[!(data$Gender=="4"),]
 pls_Gender=plspm(dataFM, plsmodel,plsmodel_blocks,pls_modes)
@@ -106,6 +93,8 @@ pls_Female_reuslts = plspm(Female, plsmodel, plsmodel_blocks, modes = plsmodel_m
 dataFM$Gender <- as.factor(dataFM$Gender)
 group_comparison_results = plspm.groups(pls_results, dataFM$Gender, method = "bootstrap")
 
+------------------------------------------
+#moderating effect of Age
 # initialize dummy variables
 dummy18 = rep(0, 184)
 dummy30 = rep(0, 184)
