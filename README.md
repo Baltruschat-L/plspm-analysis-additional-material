@@ -1,4 +1,4 @@
-# PLS_SEM_Capstone
+# PLS-PM-Code
 The code is used for my capstone which is about the user acceptability of blockchain technology to exchange EHR. For the survey analysis I used PLS SEM 
 
 I will upload the file which I have used to analsing my descriptive statistics and conducted the PLS-SEM analysis with.
