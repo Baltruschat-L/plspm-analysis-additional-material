@@ -5,8 +5,6 @@ The code is used for my capstone which is about the user acceptability of blockc
 The codes are numerated in the order in which I ran them.
 
 The data file 'data.csv' is the output and cleaned file from code 1).
-
-
 Code 2) uses the file 'data.csv' as input.
 
 The data file "descriptives.exsl' is the output and cleaned file from code 3).
