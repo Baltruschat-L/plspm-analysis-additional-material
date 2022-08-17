@@ -85,7 +85,7 @@ group_comparison_results1 = plspm.groups(pls_results, dataFM$Gender, method = "b
 
 group_comparison_results1
 
-# moderating effect of Age
+# moderating effect of Age 
 data <- read.csv("/Users/lilly/Desktop/Studium/6th Semester/CAP3000 Capstone/Dataset/data.csv", header=TRUE, row.names =1)
 str(data$Age)
 data$Age[data$Age == "4"]<- "Young"
