@@ -14,5 +14,8 @@ Code 4) uses the file descriptives.exsl' as input.
 Additional Material:
 - Manual changes to data in Qualtrics
 - Qualitative Data Analysis
+- Frequencies from measuring items
+
+Survey:
 - Quationnaire construct
-- Survey
+- Published Survey
